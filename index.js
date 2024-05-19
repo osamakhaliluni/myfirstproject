@@ -63,7 +63,7 @@ app.get("/body", (requset, response) => {
     response.send("hello "+ requset.body.name + " " + requset.query.age);
 })
 
-app.get("", (request, response)=>{
+app.get("/", (request, response)=>{
     // response.sendFile(__dirname + "/views/index.html");
     response.render("index.ejs",{
         name: "osama"
